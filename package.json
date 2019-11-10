@@ -1,0 +1,31 @@
+{
+  "name": "auth-login-app",
+  "version": "1.0.0",
+  "description": "Email and password login micro-service manager",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd frontend && npm start",
+    "server": "nodemon index.js",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoeschool/auth-login-app.git"
+  },
+  "author": "Maranatha Ilesanmi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zoeschool/auth-login-app/issues"
+  },
+  "homepage": "https://github.com/zoeschool/auth-login-app#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.4",
+    "npmlog": "^4.1.2",
+    "path": "^0.12.7"
+  }
+}
